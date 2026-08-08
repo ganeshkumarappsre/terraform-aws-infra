@@ -47,3 +47,22 @@ mysql -h <rds_endpoint> -u admin -p
 \`\`\`bash
 terraform destroy
 \`\`\`
+
+## File structure
+
+| File                          | Contains                                          |
+| ----------------------------- | ------------------------------------------------- |
+| `terraform.tf`                | Provider configuration                            |
+| `main.tf`                     | VPC, subnets, IGW, route tables                   |
+| `security_groups.tf`          | EC2 security group                                |
+| `keypair.tf`                  | SSH key pair                                      |
+| `compute.tf`                  | EC2 instance, AMI data source                     |
+| `database.tf`                 | RDS instance, DB subnet group, RDS security group |
+| `variables.tf` / `outputs.tf` | Input variables and output values                 |
+
+## Configuration
+
+Create a `terraform.tfvars` file (not committed) with:
+\`\`\`hcl
+db_password = "your-password-here"
+\`\`\`

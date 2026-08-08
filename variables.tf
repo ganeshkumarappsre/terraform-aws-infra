@@ -21,3 +21,10 @@ variable "azs" {
   type        = list(string)
   default     = ["ca-central-1a", "ca-central-1b"]
 }
+
+variable "db_password" {
+  description = "The password for the RDS database"
+  type        = string
+  sensitive   = true
+
+}

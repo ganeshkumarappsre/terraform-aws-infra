@@ -28,3 +28,9 @@ variable "db_password" {
   sensitive   = true
 
 }
+
+variable "my_ip" {
+  description = "Your public IP for SSH access, in CIDR format (e.g. 203.0.113.45/32)"
+  type        = string
+  sensitive   = true
+}

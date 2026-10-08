@@ -1,4 +1,4 @@
-# Terraform AWS Infrastructure — Project 1
+# Terraform AWS Infrastructure
 
 A foundational AWS environment built with Terraform: custom VPC with public/private
 subnets, an EC2 instance, and a private RDS MySQL database — verified end-to-end
